@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="de">
+<!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<title>Usability Fix YOU IS NOW Labs München</title>
+	<meta name="description" content="Usability Fix YOU IS NOW Labs München">
+	<meta name="author" content="Scout24 Holding GmbH - YouIsNow München">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/jquery.fancybox.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		function initialize() {
+			var myLatlng = new window.google.maps.LatLng(48.1323130037534, 11.614490747451782);
+			var mapOptions = {
+				zoom: 16,
+				disableDefaultUI: true,
+				center: myLatlng,
+				mapTypeId: window.google.maps.MapTypeId.ROADMAP
+			};
+			var map = new window.google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+			var marker = new window.google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: 'Usability Fix München'
+			});
+		}
+		window.google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<script src="js/ga.js"></script>
+</head>
+<body>
+
+
+
+	<div class="container" id="divContainerMain">
+
+		<div class="sixteen columns">
+			<div style="width: 100%; min-height: 900px;">
+				<div class="sixteen columns" style="min-height: 600px">
+					<span id="spnImgEventDate">&nbsp;</span>
+
+					<div class="nine columns">
+						<div id="divUsabilityIconLarge" class="marginLeft100">
+							<span class="spnMainHeader"><strong>Usability Fix</strong> München</span><br />
+							<span class="spnMainHeaderSubLine">29. Juli 2013 | YOU IS NOW München</span><br class="clear" />
+							<span id="spnCursorPointerBig" title="Usability Fix München">&nbsp;</span>
+						</div>
+					</div>
+					<div class="four columns">
+						<div>
+							<div id="divPoweredByTop">
+								<span class="spnPoweredByText" style="display: inline-block; float: left;">powered by</span>
+								<a href="http://www.youisnow.de" target="_blank" title="YOU IS NOW Startup-Inkubator der Scout24-Portale">
+									<span id="spnPoweredByTop">&nbsp;</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="sixteen columns" style="min-height: 320px;">
+
+					<div class="five columns">
+						<div class="marginLeft80">
+							<h3 class="marginBottom20">Usability</h3>
+							<p>
+								Ein gutes Design nimmt eine immer stärker werdende Rolle im Onlinegeschäft ein.
+							Durch eine einfache Bedienbarkeit einer Webseite und einer klaren Nutzerführung
+							wird die Kundenzufriedenheit deutlich gesteigert und somit der Erfolg eines Unternehmens
+							sichergestellt.
+							</p>
+
+						</div>
+
+					</div>
+
+					<div class="five columns">
+						<div class="marginLeft50">
+
+							<h3 class="marginBottom20">Das Event</h3>
+							<p>
+								<strong>YOU IS NOW</strong> lädt euch zum nächsten Event
+								<br />
+								am Montag, 29.7. ein,
+								um euer Produkt kostenlos zusammen mit erfahrenen UX-Designern
+								und weiteren Experten aus der Online Branche zu optimieren.
+							</p>
+							<p>
+								Dazu gibt es natürlich Live-Einblicke in das Arbeiten im Inkubator und anschließend ein
+								Get-Together mit Pizza und Bier.
+							</p>
+
+							<div id="thumbnailwrapper">
+								<div id="artiststhumbnail">
+									<img id="imgArrowScrollDown" src="images/arrow_down60.png" alt="nach unten" title="hier gibt es weitere Informationen" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="four columns">
+						<div class="marginLeft80">
+							
+														<h3 class="marginBottom20">UX-Toolkit</h3>
+								Das "UX-Toolkit für Startups" könnt Ihr 
+								<a id="lnkDownloadHandoutFirst" href="content/Handout.pdf" target="_blank" title="Download des UX-Toolkit für Startups">hier downloaden</a>.
+								<br />
+								<br />
+								<br />
+
+							<!--
+								<h3 class="marginBottom20">Anmeldung</h3>
+								<a id="lnkJetztBewerben" href="http://www.amiando.com/VDMJUPC.html" class="button green" target="_blank">Jetzt bewerben</a>
+							
+								<p>
+									Bewerbungsschluss ist Freitag,<br />
+									der <strong>Fr. 26.7.2013</strong>
+								</p>
+								
+							<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/youisnow?fref=ts&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 100%; height: 80px;" allowtransparency="true"></iframe>
+-->
+						</div>
+					</div>
+
+				</div>
+				<div class="clear" />
+			</div>
+		</div>
+
+		<div class="sixteen columns">
+			<div style="width: 100%; background-color: #ffffff; min-height: 320px;">
+
+				<div class="five columns">
+					<div class="marginLeft80 marginTop20">
+						<div id="divWithRedHr">
+							<h3>Programm</h3>
+							<div id="divWithHr" style="text-align: right;">
+								<span class="spnTimeInfoLeft">17:00 Uhr</span><br />
+								Beginn und<br />
+								Networking
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="five columns">
+					<div class="marginLeft50 marginTop20">
+						<span class="spnTimeInfo">17:30 Uhr</span><br />
+						<p>
+							Wir stellen euch das "UX-Toolkit für Startups" vor, welches René Preußer für
+						YOU IS NOW zusammengestellt hat. Hier bekommt ihr erste Anregungen für die darauffolgenden
+						Arbeitssessions.
+						</p>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<div class="marginLeft80 marginTop20">
+						<span class="spnTimeInfo">18:00 Uhr</span><br />
+						Ihr habt in mehreren 15 Minuten Slots die Möglichkeit,
+						mit den verschiedenen Spezialisten an Themen eurer Wahl
+						zu arbeiten und Feedback zu sammeln.
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+		<div class="sixteen columns">
+			<div class="marginTop60 marginLeft90">
+
+				<h3 class="marginBottom20">Impressionen</h3>
+
+				<div class="five columns" style="margin-left: 0;">
+					<h4 class="marginTop20 marginBottom10">Pics vom 29.7.2013</h4>
+					<img id="thumbImages" src="images/2013_07_29/thumbImages.jpg" alt="Bilder zum Usability Fix am 29. Juli 2013"
+						title="Bilder zum Usability Fix am 29. Juli 2013" class="thumb" />
+				</div>
+
+				<div class="five columns">
+					<div style="margin-left: -30px;">
+						<h4 class="marginTop20 marginBottom10">Movie vom 27.5.2013</h4>
+						<img id="thumbMovie" src="images/2013_05_27/thumbMovie.jpg" alt="Video zum Usability Fix am 27. Mai 2013"
+							title="Video zum Usability Fix am 27. Mai 2013" class="thumb" />
+					</div>
+				</div>
+				<div class="four columns">
+					<h4 class="marginTop20 marginBottom10">UX-Toolkit</h4>
+					<a id="lnkDownloadHandoutSecond" href="content/Handout.pdf" target="_blank" title="UX-Toolkit Download">
+						<img id="thumbToolkit" src="images/toolkit_thumb.png" alt="UX-Toolkit Download"
+							title="UX-Toolkit Download" class="thumb" /></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+
+		<div class="sixteen columns">
+			<div class="ten columns marginTop60">
+				<h3 class="marginLeft80 marginBottom20">Wo findet der Usability Fix statt?</h3>
+				<div class="marginLeft80">
+					<div id="divMapContainer">
+						<div id="map-canvas"></div>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="marginLeft95 marginTop110">
+					<div>
+						<strong>YOU IS NOW - Scout24</strong>
+						Dingolfinger Str. 1-15<br />
+						D-81673 München<br />
+						<br />
+						<br />
+						<strong>S-Bahn Station</strong><br />
+						München Leuchtenbergring
+						<br />
+						<br />
+						<br />
+						<!--
+							Die Anmeldung wird in Kürze freigeschaltet. Wenn Ihr Euch für das Event interessiert,
+							schickt eine <a id="lnkMailtoLenaHoeck" href="mailto:&#108;&#101;&#110;&#97;&#64;&#121;&#111;&#117;&#105;&#115;&#110;&#111;&#119;&#46;&#99;&#111;&#109;">Mail</a>
+							an das YOU IS NOW Team.
+							<br />
+							<br />
+-->
+						Updates zum Event gibt's auch auf unserer 
+						<a id="lnkWeitereInfosAufFacebook" href="https://www.facebook.com/youisnow" target="_blank" title="YOU IS NOW auf Facebook">Facebook Seite</a>.
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="sixteen columns">
+			<div id="divFooter" class="marginTop60 marginBottom40">
+
+				<div class="three columns">
+					<a id="lnkImpressum" href="http://www.scout24.com/FooterNavigation/Impressum.aspx" target="_blank" title="Impressum">Impressum</a>
+				</div>
+				<div class="seven columns">
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="http://youisnow.us6.list-manage.com/subscribe/post?u=36a965b8f983685600ae3522f&amp;id=1206424206" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+							<label for="tbxEmailAbo">Unseren Newsletter abonnieren</label>
+							<input id="tbxEmailAbo" type="email" value="" name="EMAIL" placeholder="E-Mail Adresse" required>
+							<input id="btnEmailAboSubmit" type="submit" value="Abonnieren" name="subscribe" class="button">
+						</form>
+					</div>
+
+					<!--End mc_embed_signup-->
+
+				</div>
+				<div class="five columns">
+					<div id="divPoweredByBottom">
+						<span class="spnPoweredByBottomText marginLeft80" style="display: block; float: left;">powered by</span>
+						<a href="http://www.youisnow.de" target="_blank" title="YOU IS NOW Startup-Inkubator der Scout24-Portale">
+							<span id="spnPoweredByBottom">&nbsp;</span>
+						</a>
+					</div>
+
+				</div>
+				<br class="clear" />
+
+				<div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+	<!-- container -->
+
+
+	<!-- End Document
+================================================== -->
+</body>
+</html>
