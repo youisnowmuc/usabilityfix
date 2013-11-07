@@ -58,9 +58,9 @@
 
 	//arrow down
 	var $elem = $('#divContainerMain');
-	$('#artiststhumbnail').click(function () {
-		$("html, body").animate({ scrollTop: $elem.height() / 3 }, 700);
-		return false;
+	$('#imgArrowScrollDown').click(function () {
+	  $("html, body").animate({ scrollTop: $elem.height() / 3 }, 700);
+	  //return false;
 	});
 
 });
